@@ -63,8 +63,8 @@
 }
 
 .stat-card {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(229, 229, 229, 0.03);
+  border: 1px solid rgba(229, 229, 229, 0.05);
   padding: 30px;
   border-radius: 20px;
   backdrop-filter: blur(10px);
@@ -73,8 +73,8 @@
 
 .stat-card:hover {
   transform: translateY(-5px);
-  border-color: rgba(176, 38, 255, 0.5);
-  box-shadow: 0 10px 30px rgba(176, 38, 255, 0.1);
+  border-color: rgba(229, 229, 229, 0.5);
+  box-shadow: 0 10px 30px rgba(229, 229, 229, 0.1);
 }
 
 .stat-value {
@@ -103,8 +103,8 @@
   margin-top: 20px;
   border-radius: 20px;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: radial-gradient(circle at 30% 20%, rgba(0, 245, 255, 0.08), rgba(8, 8, 8, 0.9));
+  border: 1px solid rgba(229, 229, 229, 0.08);
+  background: radial-gradient(circle at 30% 20%, rgba(229, 229, 229, 0.08), rgba(0, 0, 0, 0.9));
 }
 
 .about-robot-spline {

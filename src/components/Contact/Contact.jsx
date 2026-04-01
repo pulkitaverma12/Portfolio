@@ -11,7 +11,7 @@ const Contact = () => {
   const [copied, setCopied] = useState(false);
 
   // You can set the target email here.
-  const emailAddress = "shreyanshgolchha0@gmail.com";
+  const emailAddress = "pulkitaverma10@gmail.com";
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -66,14 +66,22 @@ const Contact = () => {
             <div className="email-copy hover-target" onClick={copyEmail}>
               <Mail size={24} className="accent-icon" />
               <span className="email-text">{emailAddress}</span>
-              {copied ? <Check size={20} color="#00F5FF" /> : <span className="copy-hint">Copy</span>}
+              {copied ? <Check size={20} color="#E5E5E5" /> : <span className="copy-hint">Copy</span>}
             </div>
 
             <div className="social-links">
-              <a href="#" className="social-link hover-target"><GithubIcon size={24} /></a>
-              <a href="#" className="social-link hover-target"><LinkedinIcon size={24} /></a>
-              <a href="#" className="social-link hover-target"><TwitterIcon size={24} /></a>
-              <a href="#" className="social-link hover-target"><InstagramIcon size={24} /></a>
+              <a href="https://github.com/pulkitaverma12" className="social-link hover-target" target="_blank" rel="noopener noreferrer">
+                <GithubIcon size={24} />
+              </a>
+              <a href="https://www.linkedin.com/in/pulkita-verma-a28b16259/" className="social-link hover-target" target="_blank" rel="noopener noreferrer">
+                <LinkedinIcon size={24} />
+              </a>
+              <a href="https://x.com/Priyal12Verma" className="social-link hover-target" target="_blank" rel="noopener noreferrer">
+                <TwitterIcon size={24} />
+              </a>
+              <a href="https://leetcode.com/u/Pulkitaverma/" className="social-link hover-target" target="_blank" rel="noopener noreferrer" aria-label="LeetCode profile">
+                <span>LC</span>
+              </a>
             </div>
           </motion.div>
 

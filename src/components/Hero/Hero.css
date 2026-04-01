@@ -15,7 +15,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle at 50% 50%, rgba(0, 245, 255, 0.05) 0%, rgba(8, 8, 8, 1) 70%);
+  background: radial-gradient(circle at 50% 50%, rgba(229, 229, 229, 0.05) 0%, rgba(0, 0, 0, 1) 70%);
   z-index: -1;
 }
 
@@ -52,45 +52,7 @@
 
 .glitch::before,
 .glitch::after {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: var(--bg-color);
-}
-
-.glitch::before {
-  left: 2px;
-  text-shadow: -2px 0 var(--accent-cyan);
-  clip: rect(24px, 550px, 90px, 0);
-  animation: glitch-anim-2 3s infinite linear alternate-reverse;
-}
-
-.glitch::after {
-  left: -2px;
-  text-shadow: -2px 0 var(--accent-purple);
-  clip: rect(85px, 550px, 140px, 0);
-  animation: glitch-anim 2.5s infinite linear alternate-reverse;
-}
-
-@keyframes glitch-anim {
-  0% { clip: rect(22px, 9999px, 83px, 0); }
-  20% { clip: rect(6px, 9999px, 84px, 0); }
-  40% { clip: rect(62px, 9999px, 34px, 0); }
-  60% { clip: rect(98px, 9999px, 91px, 0); }
-  80% { clip: rect(9px, 9999px, 45px, 0); }
-  100% { clip: rect(32px, 9999px, 78px, 0); }
-}
-
-@keyframes glitch-anim-2 {
-  0% { clip: rect(65px, 9999px, 97px, 0); }
-  20% { clip: rect(10px, 9999px, 10px, 0); }
-  40% { clip: rect(51px, 9999px, 60px, 0); }
-  60% { clip: rect(99px, 9999px, 3px, 0); }
-  80% { clip: rect(38px, 9999px, 2px, 0); }
-  100% { clip: rect(87px, 9999px, 20px, 0); }
+  display: none;
 }
 
 .hero-roles {
@@ -139,26 +101,29 @@
 }
 
 .cta-button.primary {
-  background-color: var(--accent-cyan);
-  color: #000;
-  box-shadow: 0 0 15px rgba(0, 245, 255, 0.4);
+  background: transparent;
+  color: var(--text-primary);
+  border: 1px solid #E5E5E5;
+  box-shadow: none;
 }
 
 .cta-button.primary:hover {
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 0 30px rgba(0, 245, 255, 0.6);
+  transform: translateY(-2px) scale(1.03);
+  border-color: #E5E5E5;
+  background: rgba(229, 229, 229, 0.03);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.35);
 }
 
 .cta-button.secondary {
   background-color: transparent;
   color: var(--text-primary);
-  border: 1px solid var(--text-secondary);
+  border: 1px solid #E5E5E5;
 }
 
 .cta-button.secondary:hover {
-  border-color: var(--accent-purple);
-  box-shadow: inset 0 0 15px rgba(176, 38, 255, 0.2), 0 0 15px rgba(176, 38, 255, 0.2);
-  transform: translateY(-3px) scale(1.05);
+  border-color: #E5E5E5;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.35);
+  transform: translateY(-2px) scale(1.03);
 }
 
 /* Right Side - Visuals */
@@ -196,26 +161,15 @@
   height: calc(100% - 30px);
   border-radius: 50%;
   object-fit: cover;
-  filter: grayscale(20%) contrast(110%);
-  border: 4px solid var(--bg-color);
-  box-shadow: 0 0 30px rgba(176, 38, 255, 0.3);
+  filter: contrast(108%);
+  border: 2px solid #E5E5E5;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.38), 0 0 14px rgba(229, 229, 229, 0.14);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.rotating-border {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  border: 2px dashed var(--accent-cyan);
-  animation: rotate 15s linear infinite;
-  opacity: 0.6;
-}
-
-@keyframes rotate {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.profile-container:hover .profile-img {
+  transform: scale(1.03);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.42), 0 0 18px rgba(229, 229, 229, 0.2);
 }
 
 @media (max-width: 992px) {
@@ -230,7 +184,7 @@
   }
 
   .hero-background {
-    background: radial-gradient(circle at 50% 20%, rgba(0, 245, 255, 0.05) 0%, rgba(8, 8, 8, 1) 70%);
+    background: radial-gradient(circle at 50% 20%, rgba(229, 229, 229, 0.05) 0%, rgba(0, 0, 0, 1) 70%);
   }
   
   .hero-visuals {

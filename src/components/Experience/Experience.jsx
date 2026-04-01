@@ -5,36 +5,49 @@ import './Experience.css';
 const experiences = [
   {
     id: 1,
-    company: "Tech Company XYZ",
-    role: "Full Stack Developer",
-    duration: "Jan 2023 – Present",
+    company: "Skyvo Technologies Pvt Ltd",
+    role: "Web Development Trainee",
+    duration: "Jul 2025 – Aug 2025",
     achievements: [
-      "Built scalable RESTful APIs serving 10k+ daily users",
-      "Improved frontend performance by 40% using React and Vite",
-      "Led and mentored a team of 3 junior developers"
+      "Designed and developed a café management website with Home, Menu, Cart, and Payment sections",
+      "Integrated frontend with backend APIs for dynamic functionality and smooth user interaction",
+      "Built responsive UI using HTML, CSS, and Bootstrap with focus on UX"
     ]
   },
   {
     id: 2,
-    company: "Startup ABC",
-    role: "Frontend Developer",
-    duration: "Jun 2022 – Dec 2022",
+    company: "Cognifyz Technologies",
+    role: "Software Development Intern",
+    duration: "Mar 2025 – Apr 2025",
     achievements: [
-      "Redesigned the core UI/UX resulting in 25% higher engagement",
-      "Integrated Stripe payment gateway securely",
-      "Reduced initial load time by 60% with lazy loading"
+      "Contributed to application design, development, testing, and deployment",
+      "Collaborated with cross-functional teams to analyze requirements and improve workflows",
+      "Developed efficient and user-centric software solutions"
     ]
   },
   {
     id: 3,
-    company: "Freelance",
+    company: "Academic & Personal Projects",
     role: "Web Developer",
-    duration: "2021 – 2022",
+    duration: "2023 – Present",
     achievements: [
-      "Delivered 10+ custom client websites and platforms",
-      "Built a bespoke CMS using Node.js and MongoDB",
-      "Implemented responsive e-commerce solutions"
+      "Built Medi Guru platform using React, PHP, and MySQL for virtual medical training",
+      "Developed Café Management System with REST API integration",
+      "Created Jewellery E-commerce website using HTML, CSS, Bootstrap",
+      "Worked on Digital Library platform for book donations (Smriti Pustakalaya)"
     ]
+  },
+  {
+  id: 4,
+  company: "Academic Projects",
+  role: "Software & Embedded Developer",
+  duration: "2023",
+  achievements: [
+    "Enhanced a CRUD application by integrating File I/O for persistent data storage and retrieval",
+    "Implemented read/write operations to ensure data remains even after program termination",
+    "Designed and developed a voice-controlled robot using Arduino with motor drivers and sensors",
+    "Enabled real-time movement control through voice commands and hardware integration"
+  ]
   }
 ];
 

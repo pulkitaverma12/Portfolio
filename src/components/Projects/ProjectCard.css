@@ -4,8 +4,8 @@
 }
 
 .card-content {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(229, 229, 229, 0.03);
+  border: 1px solid rgba(229, 229, 229, 0.05);
   border-radius: 20px;
   overflow: hidden;
   display: flex;
@@ -14,8 +14,8 @@
 }
 
 .project-card:hover .card-content {
-  border-color: rgba(0, 245, 255, 0.4);
-  box-shadow: 0 15px 35px rgba(0, 245, 255, 0.1);
+  border-color: rgba(229, 229, 229, 0.4);
+  box-shadow: 0 15px 35px rgba(229, 229, 229, 0.1);
 }
 
 .card-image-wrapper {
@@ -31,6 +31,9 @@
   object-fit: cover;
   transition: transform 0.5s ease;
 }
+.project-link {
+  color: var(--text-primary);
+}
 
 .project-card:hover .card-image {
   transform: scale(1.1);
@@ -42,7 +45,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(8, 8, 8, 0.7);
+  background: rgba(0, 0, 0, 0.7);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,7 +60,7 @@
 .view-btn {
   padding: 12px 25px;
   background-color: var(--accent-purple);
-  color: #fff;
+  color: var(--text-primary);
   border-radius: 30px;
   font-weight: 600;
   transform: translateY(20px);
@@ -100,8 +103,8 @@
 .tag {
   font-size: 0.8rem;
   padding: 6px 12px;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(229, 229, 229, 0.05);
   border-radius: 20px;
   color: var(--accent-cyan);
-  border: 1px solid rgba(0, 245, 255, 0.2);
+  border: 1px solid rgba(229, 229, 229, 0.2);
 }

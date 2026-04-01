@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Icosahedron, MeshDistortMaterial } from '@react-three/drei';
-import meImage from '../../assets/me.png';
+import meImage from '../../assets/photo.jpg';
 import './Hero.css';
 
 const Typewriter = ({ words }) => {
@@ -49,9 +49,9 @@ const ThreeDElement = () => {
       <ambientLight intensity={0.5} />
       <directionalLight position={[10, 10, 10]} intensity={1} />
       <Icosahedron args={[1.5, 0]}>
-        <MeshDistortMaterial
-          color="#B026FF"
-          emissive="#00F5FF"
+            <MeshDistortMaterial
+              color="#E5E5E5"
+              emissive="#E5E5E5"
           emissiveIntensity={0.2}
           wireframe
           distort={0.4}
@@ -82,8 +82,8 @@ const Hero = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <h1 className="hero-name glitch" data-text="Shreyansh Golchha">
-            Shreyansh Golchha
+          <h1 className="hero-name glitch" data-text="Pulkita Verma">
+            Pulkita Verma
           </h1>
           
           <div className="hero-roles">
@@ -116,10 +116,9 @@ const Hero = () => {
           </div>
           
           <div className="profile-container hover-target">
-            <div className="rotating-border"></div>
             <img 
               src={meImage}
-              alt="Shreyansh Golchha" 
+              alt="Pulkita Verma" 
               className="profile-img"
             />
           </div>

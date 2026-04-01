@@ -2,3 +2,22 @@
   position: relative;
   width: 100%;
 }
+
+.app-container::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+  background:
+    radial-gradient(70% 55% at 50% 40%, rgba(229, 229, 229, 0.04), rgba(0, 0, 0, 0) 60%),
+    radial-gradient(120% 120% at 50% 50%, rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 0.42) 100%);
+}
+
+main > section {
+  position: relative;
+}
+
+main > section + section {
+  border-top: 1px solid rgba(229, 229, 229, 0.04);
+}

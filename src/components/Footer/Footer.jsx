@@ -5,6 +5,7 @@ import './Footer.css';
 
 const Footer = () => {
   const [showScrollTop, setShowScrollTop] = useState(false);
+  const resumeUrl = '/resume.pdf';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,11 +27,18 @@ const Footer = () => {
     <footer className="footer-section">
       <div className="footer-container">
         <p className="copyright">
-          © {new Date().getFullYear()} Shreyansh Golchha. All rights reserved.
+          © {new Date().getFullYear()} Pulkita Verma. All rights reserved.
         </p>
-        <p className="credit">
-          Designed & Built by <span className="highlight">Shreyansh Golchha</span>
-        </p>
+        <div className="footer-links-wrap">
+          <p className="credit">
+            Designed & Built by <span className="highlight">Pulkita Verma</span>
+          </p>
+          <div className="footer-resume-links">
+            <a href={resumeUrl} download className="footer-link footer-link-download hover-target">
+              Download Resume
+            </a>
+          </div>
+        </div>
       </div>
 
       <AnimatePresence>

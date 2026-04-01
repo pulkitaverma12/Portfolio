@@ -22,7 +22,7 @@
   pointer-events: none;
   z-index: 999998;
   transition: border-color 0.2s;
-  box-shadow: 0 0 10px rgba(0, 245, 255, 0.2);
+  box-shadow: 0 0 10px rgba(229, 229, 229, 0.2);
 }
 
 @media (pointer: coarse) {

@@ -13,14 +13,11 @@ const navLinks = [
 ];
 
 const Navbar = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-
       // Determine active section
       const sections = navLinks.map(link => document.querySelector(link.href));
       let currentActive = 'home';
@@ -55,14 +52,14 @@ const Navbar = () => {
   return (
     <>
       <motion.nav 
-        className={`navbar ${isScrolled ? 'scrolled' : ''}`}
+        className="navbar"
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5, ease: 'easeOut' }}
       >
         <div className="nav-container">
           <a href="#home" className="logo hover-target" onClick={(e) => handleLinkClick(e, '#home')}>
-            shreyanshgolchha<span>.me</span>
+            pulkitaverma<span>.me</span>
           </a>
 
           {/* Desktop Nav */}
