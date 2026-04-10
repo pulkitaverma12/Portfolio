@@ -7,100 +7,90 @@ import './Projects.css';
 const projects = [
   {
     id: 1,
-    title: "E-Commerce Platform",
-    description: "A full-featured e-commerce platform with real-time inventory and payment gateway integration.",
-    longDescription: "This comprehensive e-commerce solution provides users with a seamless shopping experience. It features real-time inventory tracking, secure Stripe payment integration, and an intuitive admin dashboard for managing products and orders.",
-    tags: ["React", "Node.js", "MongoDB"],
-    image: "https://picsum.photos/seed/proj1/800/600",
+    title: "Chhanv Health Camp Admin Panel",
+    description: "Role-based admin and doctor portal for managing government health camps, patients, and scheme workflows.",
+    longDescription: "Built a full-featured health operations platform with separate Admin and Doctor portals, secure login flow, camp scheduling, patient records, and analytics dashboards. The app includes reports with chart visualizations, activity tracking, and responsive Hindi-first screens for field and office users.",
+    tags: ["React", "TypeScript", "Tailwind CSS", "Vite", "React Router", "Recharts"],
+    image: "/projects/chhanv_logo.svg",
     gallery: [
-      "https://picsum.photos/seed/proj1/800/600",
-      "https://picsum.photos/seed/proj1a/800/600",
-      "https://picsum.photos/seed/proj1b/800/600",
-      "https://picsum.photos/seed/proj1c/800/600"
+      "/projects/chhanv_logo.svg"
     ],
-    demoUrl: "#",
-    githubUrl: "#"
+    demoUrl: "https://chanv.ssipmt.in/"
   },
   {
     id: 2,
-    title: "AI Chat App",
-    description: "Real-time AI conversational interface utilizing OpenAI models.",
-    longDescription: "An advanced chat application that leverages OpenAI's GPT models to provide intelligent, contextual responses. Built with WebSockets for true real-time communication and features conversation history saving.",
-    tags: ["Python", "OpenAI API", "WebSockets"],
-    image: "https://picsum.photos/seed/proj2/800/600",
+    title: "Coffee Break Food Ordering App",
+    description: "Angular-based food ordering app with vegetarian menu filters, cart, wallet top-up, and multi-method checkout flow.",
+    longDescription: "Built a complete food ordering frontend in Angular with category-wise browsing, search, cart management, quantity controls, and payment processing. The app includes wallet recharge (deposit), card/UPI/net-banking payment options, order creation and verification flow, and local persistence for cart and transaction history.",
+    tags: ["Angular", "TypeScript", "RxJS", "Angular Router", "REST API", "CSS"],
+    image: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29mZmVlfGVufDB8fDB8fHww",
     gallery: [
-      "https://picsum.photos/seed/proj2/800/600",
-      "https://picsum.photos/seed/proj2a/800/600",
-      "https://picsum.photos/seed/proj2b/800/600",
-      "https://picsum.photos/seed/proj2c/800/600"
+      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29mZmVlfGVufDB8fDB8fHww",
     ],
     demoUrl: "#",
-    githubUrl: "#"
   },
   {
     id: 3,
-    title: "Portfolio Generator",
-    description: "Dynamic portfolio generator for creative professionals and developers.",
-    longDescription: "A Vite-powered tool that allows users to quickly generate stunning portfolios based on JSON configuration files. Features multiple themes and Framer Motion animations out of the box.",
-    tags: ["React", "Vite", "CSS"],
-    image: "https://picsum.photos/seed/proj3/800/600",
+    title: "Gulab Jewellery Store Website",
+    description: "Responsive Bootstrap jewellery storefront with category navigation, product carousel, and premium visual sections.",
+    longDescription: "Built a complete jewellery landing page using Bootstrap 5, Bootstrap Icons, and custom CSS. The project features a dual-navbar layout, hero banner CTA, product showcase carousel, themed card interactions, parallax storytelling sections, and a structured multi-column footer for customer support and brand trust.",
+    tags: ["HTML5", "Bootstrap 5", "CSS3", "Bootstrap Icons", "JavaScript"],
+    image: "/projects/gulab/j20.jpg",
     gallery: [
-      "https://picsum.photos/seed/proj3/800/600",
-      "https://picsum.photos/seed/proj3a/800/600",
-      "https://picsum.photos/seed/proj3b/800/600",
-      "https://picsum.photos/seed/proj3c/800/600"
+      "/projects/gulab/banner1.jpg",
+      "/projects/gulab/j13.jpg",
+      "/projects/gulab/j20.jpg",
+      "/projects/gulab/j6.jpg"
     ],
     demoUrl: "#",
-    githubUrl: "#"
   },
   {
     id: 4,
-    title: "Task Manager Pro",
-    description: "Collaborative task management tool with drag-and-drop boards.",
-    longDescription: "A Kanban-style project management application designed for agile teams. Users can create boards, drag and drop tasks, assign team members, and track progress using integrated Firebase real-time updates.",
-    tags: ["Vue.js", "Firebase", "Tailwind"],
-    image: "https://picsum.photos/seed/proj4/800/600",
+    title: "Pustakalay Library Management System",
+    description: "Government-themed library management web app for books, donors, librarians, and book transfer workflows.",
+    longDescription: "Built a responsive library operations dashboard using React + TypeScript + Vite with login flow, role-based dashboard sections, and module-wise management screens. The app includes book inventory handling, donor records, librarian records, transfer tracking, stat cards, and centralized theme styling with a government-compliant visual system.",
+    tags: ["React", "TypeScript", "Vite", "React Router", "CSS", "Lucide"],
+    image: "https://images.unsplash.com/photo-1541963463532-d68292c34b19?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Ym9va3xlbnwwfHwwfHx8MA%3D%3D",
     gallery: [
-      "https://picsum.photos/seed/proj4/800/600",
-      "https://picsum.photos/seed/proj4a/800/600",
-      "https://picsum.photos/seed/proj4b/800/600",
-      "https://picsum.photos/seed/proj4c/800/600"
+      "/projects/pustakalay/Pustakalaya.png",
+      // "/projects/pustakalay/Pustakalaya logo.png",
+      // "/projects/pustakalay/Pustakalaya 1.png",
+      // "/projects/pustakalay/Pustakalaya 3.png",
+      // "/projects/pustakalay/Pustakalaya 5.png"
     ],
-    demoUrl: "#",
-    githubUrl: "#"
+    demoUrl: "https://smritipustakalaya.ssipmt.in/",
   },
   {
     id: 5,
-    title: "Weather Dashboard",
-    description: "Hyper-local weather visualization with interactive maps.",
-    longDescription: "A beautiful weather dashboard that aggregates data from multiple REST APIs to provide accurate, hyper-local forecasts. Includes interactive radar maps and historical temperature charts.",
-    tags: ["React", "REST API", "Chart.js"],
-    image: "https://picsum.photos/seed/proj5/800/600",
+    title: "Medi Guru Virtual Medical Training Portal",
+    description: "Full-stack training management platform for government medical officers with session scheduling, uploads, analytics, and role-based access.",
+    longDescription: "Built a full-stack web platform for virtual physician training using React + TypeScript on the frontend and PHP + MySQL APIs on the backend. The system supports role-based authentication, meeting creation, attendance and test data uploads, statistics dashboards, and export/report workflows for CMHO-level monitoring.",
+    tags: ["React", "TypeScript", "Vite", "PHP", "MySQL", "JWT", "XLSX"],
+    image: "/projects/mediguru/medigurulogo.png",
     gallery: [
-      "https://picsum.photos/seed/proj5/800/600",
-      "https://picsum.photos/seed/proj5a/800/600",
-      "https://picsum.photos/seed/proj5b/800/600",
-      "https://picsum.photos/seed/proj5c/800/600"
+      "/projects/mediguru/medigurulogo.png",
+      // "/projects/mediguru/medigurulogo.svg",
+      // "/projects/mediguru/medigurulogo.png",
+      // "/projects/mediguru/medigurulogo.svg"
     ],
-    demoUrl: "#",
-    githubUrl: "#"
+    demoUrl: "https://mediguru.ssipmt.in/",
   },
-  {
-    id: 6,
-    title: "Blog CMS",
-    description: "Headless content management system optimized for SEO and speed.",
-    longDescription: "A custom headless CMS built for speed and SEO. Features MDX support, scheduled publishing, and a custom PostgreSQL backend to handle high traffic read operations efficiently.",
-    tags: ["Next.js", "PostgreSQL", "Prisma"],
-    image: "https://picsum.photos/seed/proj6/800/600",
-    gallery: [
-      "https://picsum.photos/seed/proj6/800/600",
-      "https://picsum.photos/seed/proj6a/800/600",
-      "https://picsum.photos/seed/proj6b/800/600",
-      "https://picsum.photos/seed/proj6c/800/600"
-    ],
-    demoUrl: "#",
-    githubUrl: "#"
-  }
+  // {
+  //   id: 6,
+  //   title: "Blog CMS",
+  //   description: "Headless content management system optimized for SEO and speed.",
+  //   longDescription: "A custom headless CMS built for speed and SEO. Features MDX support, scheduled publishing, and a custom PostgreSQL backend to handle high traffic read operations efficiently.",
+  //   tags: ["Next.js", "PostgreSQL", "Prisma"],
+  //   image: "https://picsum.photos/seed/proj6/800/600",
+  //   gallery: [
+  //     "https://picsum.photos/seed/proj6/800/600",
+  //     "https://picsum.photos/seed/proj6a/800/600",
+  //     "https://picsum.photos/seed/proj6b/800/600",
+  //     "https://picsum.photos/seed/proj6c/800/600"
+  //   ],
+  //   demoUrl: "#",
+  //   githubUrl: "#"
+  // }
 ];
 
 const Projects = () => {

@@ -24,30 +24,6 @@ const experiences = [
       "Collaborated with cross-functional teams to analyze requirements and improve workflows",
       "Developed efficient and user-centric software solutions"
     ]
-  },
-  {
-    id: 3,
-    company: "Academic & Personal Projects",
-    role: "Web Developer",
-    duration: "2023 – Present",
-    achievements: [
-      "Built Medi Guru platform using React, PHP, and MySQL for virtual medical training",
-      "Developed Café Management System with REST API integration",
-      "Created Jewellery E-commerce website using HTML, CSS, Bootstrap",
-      "Worked on Digital Library platform for book donations (Smriti Pustakalaya)"
-    ]
-  },
-  {
-  id: 4,
-  company: "Academic Projects",
-  role: "Software & Embedded Developer",
-  duration: "2023",
-  achievements: [
-    "Enhanced a CRUD application by integrating File I/O for persistent data storage and retrieval",
-    "Implemented read/write operations to ensure data remains even after program termination",
-    "Designed and developed a voice-controlled robot using Arduino with motor drivers and sensors",
-    "Enabled real-time movement control through voice commands and hardware integration"
-  ]
   }
 ];
 

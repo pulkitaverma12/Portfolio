@@ -1,9 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import resumeFile from '../../assets/resume.pdf';
 import './ResumeSection.css';
 
 const ResumeSection = () => {
-  const resumeUrl = '/resume.pdf';
+  const resumeUrl = resumeFile;
 
   return (
     <section id="resume" className="resume-section">
@@ -43,7 +44,7 @@ const ResumeSection = () => {
             </a>
             <a
               href={resumeUrl}
-              download
+              download="resume.pdf"
               className="resume-btn resume-btn-solid hover-target"
             >
               Download Resume

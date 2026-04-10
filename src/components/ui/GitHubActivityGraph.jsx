@@ -2,11 +2,11 @@ import React, { useEffect, useMemo, useState } from 'react';
 
 const GitHubActivityGraph = ({ githubUsername, githubProfileUrl }) => {
   const primaryGraphUrl = useMemo(
-    () => `https://ghchart.rshah.org/BFC4CC/${githubUsername}`,
+    () => `https://ghchart.rshah.org/EF4444/${githubUsername}`,
     [githubUsername]
   );
   const fallbackGraphUrl = useMemo(
-    () => `https://ghchart.rshah.org/2A2A2A/${githubUsername}`,
+    () => `https://ghchart.rshah.org/DC2626/${githubUsername}`,
     [githubUsername]
   );
 

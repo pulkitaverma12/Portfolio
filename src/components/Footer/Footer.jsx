@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowUp } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import resumeFile from '../../assets/resume.pdf';
 import './Footer.css';
 
 const Footer = () => {
   const [showScrollTop, setShowScrollTop] = useState(false);
-  const resumeUrl = '/resume.pdf';
+  const resumeUrl = resumeFile;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -34,7 +35,11 @@ const Footer = () => {
             Designed & Built by <span className="highlight">Pulkita Verma</span>
           </p>
           <div className="footer-resume-links">
-            <a href={resumeUrl} download className="footer-link footer-link-download hover-target">
+            <a
+              href={resumeUrl}
+              download="resume.pdf"
+              className="footer-link footer-link-download hover-target"
+            >
               Download Resume
             </a>
           </div>

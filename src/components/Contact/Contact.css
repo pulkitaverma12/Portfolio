@@ -206,6 +206,10 @@
   border-left: 4px solid var(--accent-cyan);
 }
 
+.toast-notification.error {
+  border-left: 4px solid #ef4444;
+}
+
 @media (max-width: 992px) {
   .contact-split {
     grid-template-columns: 1fr;

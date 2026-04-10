@@ -180,6 +180,13 @@
   border-radius: 10px;
 }
 
+.activity-legend {
+  margin-top: 10px;
+  color: #fca5a5;
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+}
+
 @keyframes skillsFadeUp {
   from {
     opacity: 0;
@@ -250,4 +257,5 @@
     min-height: 140px;
     padding: 8px;
   }
+
 }

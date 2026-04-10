@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Mail, Check, AlertCircle } from 'lucide-react';
-import { GithubIcon, LinkedinIcon, TwitterIcon, InstagramIcon } from '../Icons';
+import { GithubIcon, LinkedinIcon, TwitterIcon } from '../Icons';
 import './Contact.css';
 
 const Contact = () => {
@@ -12,6 +12,7 @@ const Contact = () => {
 
   // You can set the target email here.
   const emailAddress = "pulkitaverma10@gmail.com";
+  const formSubmitEndpoint = `https://formsubmit.co/ajax/${emailAddress}`;
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -24,20 +25,39 @@ const Contact = () => {
     }, 3000);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    setTimeout(() => {
-      const { subject, message, name, email } = formData;
-      const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
-      
-      window.location.href = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-      
+
+    try {
+      const response = await fetch(formSubmitEndpoint, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json'
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+          _subject: `Portfolio Contact: ${formData.subject}`,
+          _template: 'table',
+          _captcha: 'false'
+        })
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to send message');
+      }
+
       setIsSubmitting(false);
       setFormData({ name: '', email: '', subject: '', message: '' });
-      showToast('Opening mail client...', 'success');
-    }, 800);
+      showToast('Message sent successfully!', 'success');
+    } catch (error) {
+      setIsSubmitting(false);
+      showToast('Message send nahi ho paya. Please try again.', 'error');
+    }
   };
 
   const copyEmail = () => {

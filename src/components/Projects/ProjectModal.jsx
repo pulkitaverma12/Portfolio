@@ -67,9 +67,9 @@ const ProjectModal = ({ project, onClose }) => {
                 <a href={project.demoUrl} target="_blank" rel="noreferrer" className="action-btn primary hover-target">
                   <ExternalLink size={20} /> Live Demo
                 </a>
-                <a href={project.githubUrl} target="_blank" rel="noreferrer" className="action-btn secondary hover-target">
+                {/* <a href={project.githubUrl} target="_blank" rel="noreferrer" className="action-btn secondary hover-target">
                   <GithubIcon size={20} /> GitHub
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
